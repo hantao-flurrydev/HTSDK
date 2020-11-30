@@ -24,13 +24,11 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/hantao-flurrydev/HTSDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'yhantao' => 'hantao.yang@verizonmedia.com' }
+  s.author           = { 'hantao-flurrydev' => 'hantao.yang@verizonmedia.com' }
   s.source           = { :git => 'https://github.com/hantao-flurrydev/HTSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '13.0'
-
-  s.default_subspec  = 'CalculateSDK'
 
   s.subspec 'CalculateSDK' do |ss|
     ss.source_files = [
