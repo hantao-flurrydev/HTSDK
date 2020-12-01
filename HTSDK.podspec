@@ -31,22 +31,13 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '13.0'
 
   s.subspec 'CalculateSDK' do |ss|
-    ss.source_files = [
+    ss.ios.source_files = [
       'CalculateSDK/CalculateSDK.h',
+      'CalculateSDK/CalculateSDKEmpty.m',
     ]
 
     ss.platform   = :ios, '13.0'
     ss.frameworks = 'Foundation'
     ss.vendored_libraries = "CalculateSDK/libCalculateSDK.a"
-  end
-
-  s.subspec 'HelloWorldSDK' do |ss|
-    ss.source_files = [
-      'HelloWorldSDK/HelloWorldSDK.h',
-    ]
-
-    ss.platform   = :ios, '13.0'
-    ss.frameworks = 'Foundation'
-    ss.vendored_libraries = "HelloWorldSDK/libHelloWorldSDK.a"
   end
 end
