@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '13.0'
 
   s.subspec 'CalculateSDK' do |ss|
-    ss.ios.source_files = [
+    ss.source_files = [
       'CalculateSDK/CalculateSDK.h',
       'CalculateSDK/CalculateSDKEmpty.m',
     ]
